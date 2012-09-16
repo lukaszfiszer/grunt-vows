@@ -3,7 +3,11 @@
 A grunt task to run Vows tests.
 
 ## Getting Started
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-vows-test`
+Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: 
+
+```javascript
+npm install grunt-vows-test
+```
 
 Then add this line to your project's `grunt.js` gruntfile:
 
@@ -11,14 +15,23 @@ Then add this line to your project's `grunt.js` gruntfile:
 grunt.loadNpmTasks('grunt-vows-test');
 ```
 
-By default, the task will test all  files located in `test/` folder.
+To check the installation, type `grunt --help` - you should see a vows task in the **Available tasks** list.
+
+If everything is OK, you can just run the grunt task:
+
+```javascript
+grunt vows
+```
+By default, the task will run all tests located in `test/` folder. 
 
 [grunt]: https://github.com/cowboy/grunt
 [getting_started]: https://github.com/cowboy/grunt/blob/master/docs/getting_started.md
 
 ## Documentation
 
-As any other grunt task, grunt-vows can be configured by adding a `vows`
+### Task configuration
+
+As like any other grunt task, grunt-vows can be configured by adding a `vows`
 object to the `grunt.initConfig` method. There are 3 configuration options available here: 
 
 ```javascript
@@ -29,17 +42,22 @@ vows: {
 }
 ```
 
-Once you're done, you can just run the grunt task:
-
-```javascript
-grunt vows
-```
-
 It's highly recomended to change the grunt's default task, so it runs vows test every time you type `grunt`:
 
 ```javascript
 grunt.registerTask('default', 'lint vows');
 ```
+
+### Vows test files
+
+All your Vows tests must be exported, ie. they must follow the pattern below : 
+
+```javascript
+vows.describe('subject').addBatch({/* ... */}).export(module);
+```
+
+Please check [Vows documentation](http://vowsjs.org/#-running-a-suite) if you need more information about exporting your test suite. 
+
 
 ## Contributing
 The plugin was created one Sunday afternoon, when I suprisingly couldn't find any grunt taks to let me run Vows test for my personal project.
