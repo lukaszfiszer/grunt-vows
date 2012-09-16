@@ -3,12 +3,12 @@
 A grunt task to run Vows tests.
 
 ## Getting Started
-Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-vows`
+Install this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-vows-test`
 
 Then add this line to your project's `grunt.js` gruntfile:
 
 ```javascript
-grunt.loadNpmTasks('grunt-vows');
+grunt.loadNpmTasks('grunt-vows-test');
 ```
 
 By default, the task will test all  files located in `test/` folder.
