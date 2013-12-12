@@ -1,6 +1,5 @@
-# The project is no longer maintained and incompatible with grunt 0.4.x. Please check [grunt-vows-runner](https://github.com/goalzen/grunt-vows-runner) or [grunt-wows](https://github.com/CMTegner/grunt-vows) packages.
+### The project is no longer maintained and incompatible with grunt 0.4.x. Please check [grunt-vows-runner](https://github.com/goalzen/grunt-vows-runner) or [grunt-wows](https://github.com/CMTegner/grunt-vows) packages.
 
----
 
 # grunt-vows
 
