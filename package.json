@@ -1,7 +1,7 @@
 {
   "name": "grunt-vows-test",
   "description": "A grunt task to run your Vows tests.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/lukaszfiszer/grunt-vows",
   "author": {
     "name": "Lukasz Fiszer"
